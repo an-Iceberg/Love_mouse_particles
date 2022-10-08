@@ -19,6 +19,14 @@ function love.wheelmoved(x, y)
   mouse_trail:modify_amount(y)
 end
 
+function love.keypressed(key, scancode, is_repeat)
+  if key == "up" then
+    mouse_trail:modify_amount(1)
+  elseif key == "down" then
+    mouse_trail:modify_amount(-1)
+  end
+end
+
 function love.update(delta_time)
   mouse_trail:update(delta_time)
 end
