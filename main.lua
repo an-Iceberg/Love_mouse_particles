@@ -35,5 +35,5 @@ function love.draw()
   mouse_trail:draw()
 
   love.graphics.setColor(1, 1, 1)
-  love.graphics.print("Amount: "..mouse_trail.amount.."\nParticles: "..#mouse_trail.particles, 5, 5)
+  love.graphics.print("Amount: "..mouse_trail.amount.."\nParticles: "..#mouse_trail.particles.."\nFPS: "..love.timer.getFPS(), 5, 5)
 end

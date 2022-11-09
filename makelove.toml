@@ -4,7 +4,7 @@ build_directory = "build"
 love_version = "11.4"
 
 love_files = [
-    "+*",
-    "-*/.*",
-    "-./build/*",
+  "+*",
+  "-*/.*",
+  "-./build/*",
 ]
